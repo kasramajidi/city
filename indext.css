@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Shippori Antique', sans-serif;
+}
+
+.header{
+    height: 100vh;
+}
+
+.vidobox{
+    width: 100%;
+    height: 100%;
+}
+
+.vidobox video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.continer{
+    padding: 0 100px;
+    height: 100vh;
+}
+
+.continer::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    backdrop-filter: blur(8px);
+}
+
+.navbar{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    color: white;
+    font-size: 28px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.list{
+    position: relative;
+    display: flex;
+}
+
+.list-i{
+    list-style: none;
+    margin: 0 25px;
+}
+
+.list-i a{
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    position: relative;
+    transition: all 0.4s;
+    padding: 5px 8px;
+}
+
+.list-i a:hover{
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+}
+
+.text{
+    width: 40%;
+    position: absolute;
+    top: 25%;
+    left: 6%;
+}
+
+.text-h{
+    font-size: 48px;
+    color: white;
+    margin-bottom: 25px;
+}
+
+.text-p{
+    color: white;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.btn{
+    height: 54px;
+    width: 140px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+    color: white;
+    transition: all 0.4s ease-out;
+}
+
+.btn:hover{
+    background-color: white;
+    color: black;
+}
